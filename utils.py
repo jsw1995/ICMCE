@@ -334,7 +334,7 @@ def embed2(image,cover):
         ddd.append(sum(tt))
 
     d = ddd.index(min(ddd))-10
-    print('ddd',ddd,'d',d)
+    # print('ddd',ddd,'d',d)
     T = aa.argmax() + d
     X33 = np.copy(image)
     X33[image < T] = X33[image < T] - T + 256
